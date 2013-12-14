@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.nuclearw.addquartz</groupId>
     <artifactId>AddQuartz</artifactId>
-    <version>1.6.4-0.1-tul</version>
+    <version>1.7.2-0.1-tul</version>
     <name>AddQuartz</name>
     <url>https://github.com/NuclearW/AddQuartz</url>
     <issueManagement>
@@ -72,7 +72,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
-            <version>1.6.4-R0.1-SNAPSHOT</version>
+            <version>1.7.2-R0.1-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
 <!-- craftbukkit

@@ -7,9 +7,8 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.craftbukkit.v1_6_R3.CraftWorld;
+import org.bukkit.craftbukkit.v1_7_R1.CraftWorld;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.world.ChunkLoadEvent;
@@ -18,10 +17,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
 
-import net.minecraft.server.v1_6_R3.WorldGenMinable;
+import net.minecraft.server.v1_7_R1.Block;
+import net.minecraft.server.v1_7_R1.WorldGenMinable;
 
 public class AddQuartz extends JavaPlugin implements Listener, Runnable {
-	private static WorldGenMinable orePopulator = new WorldGenMinable(Material.QUARTZ_ORE.getId(), 13, Material.NETHERRACK.getId());
+	private static WorldGenMinable orePopulator = new WorldGenMinable(Block.b("minecraft:quartz_ore"), 13, Block.b("minecraft:netherrack"));
 	private static Random random = new Random();
 
 	private static LinkedBlockingQueue<ChunkLocation> chunksToProcess = new LinkedBlockingQueue<ChunkLocation>();
